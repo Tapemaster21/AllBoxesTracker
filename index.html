@@ -1,1 +1,410 @@
-test
+<head>
+	<link rel="icon" type="image/png" href="box.png"/>
+	<style>
+		body
+		{
+			margin: 20px;
+			background-image: url("tile.png");
+			background-size: 100px 100px;
+			background-repeat: repeat;
+		}
+		img
+		{
+			padding: 3px;
+		}
+		tr
+		{
+			background-color: rgba(0,0,0,0.75);
+			width: 100%;
+		}
+		.outline 
+		{
+			font-family: Lucida Console;
+			font-size: 50px;
+			color: white;
+			text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+			text-align: center;
+		}
+		table
+		{
+			border: solid;
+			border-color: white;
+		}
+		td
+		{
+			border-bottom: solid;
+			border-color: white;
+			cursor: pointer;
+		}
+		h1
+		{
+			font-family: Lucida Console;
+			font-size: 42px;
+			color: white;
+			text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function myFunction(img)
+		{
+			if(img.style.opacity == "0.25")
+			{
+				img.style.opacity = "1";
+			}
+			else
+			{
+				img.style.opacity = "0.25";
+			}
+		}
+
+		function sectionChecker(string)
+		{
+			var elms = document.getElementById(string).getElementsByTagName('img');
+
+			for (var i = 0; i < elms.length; i++) 
+			{
+				if(elms[elms.length-1].style.opacity == "0.25")
+				{
+					elms[i].style.opacity = "1";
+				}
+				else
+				{
+					elms[i].style.opacity = "0.25";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>ALL BOXES NONSTOP RANDOMIZER TRACKER</h1>
+	<table width="100%">
+		<tr>
+			<td class="outline" onclick="sectionChecker('wc')">
+				WCAP
+			</td>
+			<td id='wc'>
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('vc')">
+				VCAP
+			</td>
+			<td id='vc'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('mc')">
+				MCAP
+			</td>
+			<td id='mc'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('roof')">
+				ROOF
+			</td>
+			<td id='roof'>
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>	
+			<td class="outline" onclick="sectionChecker('bob')">
+				BOB
+			</td>
+			<td id='bob'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('wf')">
+				WF
+			</td>
+			<td id='wf'>
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline"  onclick="sectionChecker('jrb')">
+				JRB
+			</td>
+			<td id='jrb'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('ccm')">
+				CCM
+			</td>
+			<td id='ccm'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('pss')">
+				PSS
+			</td>
+			<td id='pss'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('bbh')">
+				BBH
+			</td>
+			<td id='bbh'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('hmc')">
+				HMC
+			</td>
+			<td id='hmc'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('lll')">
+				LLL
+			</td>
+			<td id='lll'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('ssl')">
+				SSL
+			</td>
+			<td id='ssl'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('ddd')">
+				DDD
+			</td>
+			<td id='ddd'>
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('sl')">
+				SL
+			</td>
+			<td id='sl'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('wdw')">
+				WDW
+			</td>
+			<td id="wdw">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="vc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('ttm')">
+				TTM
+			</td>
+			<td id='ttm'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('thi')">
+				THI
+			</td>
+			<td id='thi'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('ttc')">
+				TTC
+			</td>
+			<td id='ttc'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('rr')">
+				RR
+			</td>
+			<td id='rr'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('cloud')">
+				CLOUD
+			</td>
+			<td id='cloud'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="wc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr><td></td><td></td></tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('dw')">
+				BITDW
+			</td>
+			<td id='dw'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+
+				<img src="mc.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline" onclick="sectionChecker('fs')">
+				BITFS
+			</td>
+			<td id='fs'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="outline"  onclick="sectionChecker('sky')">
+				BITS
+			</td>
+			<td id='sky'>
+				<img src="box.png" height="50px" length="50px" onclick="myFunction(this)" role="button">
+			</td>
+		</tr>
+	</table>
+
+	<h1>PAINTING TRACKER</h1>
+	<iframe src="https://sm64tracker.com/" height="700px" width="100%" scrolling="yes"></iframe>
+	<!-- ty dan salvato, I didn't wanna have to make this myself -->
+
+</body>
